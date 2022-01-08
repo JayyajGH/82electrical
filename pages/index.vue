@@ -40,7 +40,54 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  name: 'IndexPage'
+  name: 'IndexPage',
+  		data() {
+        return {
+            structuredData: {
+              "@context": "http://schema.org",
+              "@type": "LocalBusiness",
+              "name": "82Electical",
+              "description": "82 electrical is here to supply domestic and light commercial electrical services to Bristol and the surrounding areas",
+							"image": "https://82electrical.co.uk/apple-touch-icon.png",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Southmead",
+                "addressRegion": "Bristol",
+                "addressCountry": "GB",
+                "postalCode": "BS10"
+              },
+							"openingHoursSpecification": [
+							  {
+							    "@type": "OpeningHoursSpecification",
+							    "dayOfWeek": [
+                    "Monday",
+							      "Tuesday",
+							      "Wednesday",
+							      "Thursday",
+                    "Friday",
+							      "Saturday"
+							    ],
+							    "opens": "08:00",
+							    "closes": "18:00"
+							  },
+								{
+							    "@type": "OpeningHoursSpecification",
+							    "dayOfWeek": [
+							      "Sunday"
+							    ],
+							    "opens": "10:00",
+							    "closes": "13:00"
+							  }
+							],
+              "telephone": "+4407813408135",
+							"email":"mailto:andrew@82electical.co.uk",
+              "url": "https://82electical.co.uk",
+              "sameAs": [
+                "https://facebook.com/ElectricanForBristol",
+                "https://instagram.com/ElectricianForBristol" ]
+            }
+        }
+    },
 })
 </script>
 
