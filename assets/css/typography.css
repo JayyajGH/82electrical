@@ -8,12 +8,11 @@ body {
 .heading1 {
   font-size: 1.3rem;
   margin-bottom: 2rem;
-  text-align: center;
 }
 
 @media (min-width: 50em) {
   .heading1 {
-    font-size: 2rem;
+    font-size: 3.1rem;
   }
 }
 

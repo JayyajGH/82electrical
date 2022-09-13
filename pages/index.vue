@@ -3,9 +3,21 @@
     <section class="sectionpart">
       <h2 class="heading">About us</h2>
       <div class="text-stuff">
-        <p>82 electrical is here to supply domestic and light commercial electrical services to Bristol and the surrounding areas, so get in touch.</p>
-        <p>We do everything from changing a light bulb to full-house rewires</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+        <p>Offering domestic electrical services for Bristol and surrounding areas. From it’s beginnings
+in 2017 we have focused on delivering high quality, long lasting electrical installations both
+on the surface and underneath. Designing, installing and fault finding most aspects of
+electrical systems in the home. Always using products that are well tested to be long lasting
+and efficient.
+</p>
+        <p>We try to keep things as simple as possible for our clients and always endeavour to be willing
+to help in any way we can. Building systems that are future-proof and are designed around
+our clients&#39; long term needs as well as their short term ones. We take pride in providing safe
+and reliable installations that are well suited for their intended purpose and are always happy
+to help find solutions should any problems arise.</p>
+        <p>Hopefully this gives you some idea of our ethos as a company so please feel free to get in
+touch via our &quot;contact us&quot; section if you have any specific queries and we will be happy to
+answer them if we can.</p>
+<p>Many thanks for stopping by and we look forward to hearing from you soon.</p>
       </div>
     </section>
     <section class="sectionpart">
@@ -13,23 +25,18 @@
       <ul class="items">
         <li class="item">
           <img src="~/assets/images/bulb.svg" class="item__image"/>
-          <h2>Domestic work</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+          <h2 class="sub-heading">Rewires</h2>
+          <p>Whether an installation has reached the end of its life of is no longer fit for purpose a full rewire is sometimes necessary and we can help</p>
         </li>
         <li class="item">
           <img src="~/assets/images/bulb.svg" class="item__image"/>
-          <h2>Light commercial</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+          <h2 class="sub-heading">Fault finding</h2>
+          <p>Faults are a pain, so call us and we can start by giving advice over the phone, but if needed can often be there the same day to find a solution</p>
         </li>
         <li class="item">
            <img src="~/assets/images/bulb.svg" class="item__image"/>
-          <h2>Competitive pricing</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
-        </li>
-        <li class="item">
-           <img src="~/assets/images/bulb.svg" class="item__image"/>
-          <h2>Smart technology</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+          <h2 class="sub-heading">Lighting</h2>
+          <p>Superb lighting installations, indoors and out</p>
         </li>
       </ul>
     </section>
@@ -98,12 +105,20 @@ export default Vue.extend({
 
   .heading {
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
 
     &:before {
       content: url('~/assets/images/bolt.svg');
       padding-right: 10px;
     }
+
+    @media (min-width: 50em) {
+      font-size: 40px;
+    }
+  }
+
+  .sub-heading {
+    font-size: 20px;
   }
 
   .items {
@@ -123,7 +138,11 @@ export default Vue.extend({
   }
 
   .item__image {
-    width: 125px;
+    width: 75px;
+
+    @media (min-width: 50em) {
+      width: 100px;
+    }
   }
 
   .sectionpart {

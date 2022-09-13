@@ -1,6 +1,6 @@
  <<template>
     <div class="wrapper">
-        <h2 class="heading">Recent Projects</h2>
+        <h2 class="heading1">Previous work</h2>
         <section class="image-text__panel image-text__panel--dark u-margin-bottom--large" id="about">
                 <div class="image-text__image image--brendan"></div>
                 <div class="image-text__text u-padding--small">
@@ -44,10 +44,6 @@
  </template>
 
  <style scoped lang="scss">
-
-	 .heading {
-	    font-size: 40px;
-	 }
 
 	.wrapper--small {
 	  padding-left: 10px;

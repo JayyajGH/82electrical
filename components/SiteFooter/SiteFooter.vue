@@ -23,7 +23,7 @@
 
     <div class="footer__copyright">
       <!--<p class="smallest-text">Site designed and developed by <a href="https://stash74.co.uk">Stash74</a> © 2019</p>-->
-      <p class="smallest-text">Site designed and developed by Jason Harris © 2022</p>
+      <p class="smallest-text">Site developed by Jason Harris © 2022</p>
     </div>
   </footer>
 </template>

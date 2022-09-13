@@ -6,7 +6,7 @@
         <div class="topbit">
           <!--<a class="header__text header__email" href="mailto:andrew@82electrical.co.uk">andrew@82electrical.co.uk</a>-->
           <a href="/" class="logo__anchor" title="82Electrical">
-              <img src="~/assets/images/logo.png" class="logo u-padding--small" alt="82Electrical"/>
+              <img src="~/assets/images/logo-horizontal.jpg" class="logo u-padding--small" alt="82Electrical"/>
             </a>
           <!--<a class="header__text header__phone" href="tel:+447813408135" aria-label="Phone us on 0 7 8 1 3. 4 0 8. 1 3 5">07813 408135</a>-->
         </div>
@@ -15,8 +15,8 @@
       <nav class="site-nav">
         <ul class="site-nav__menu">
           <li class="site-nav__item site-nav__item--home"><a class="site-nav__link body--bold-light" href="/">Home</a></li>
-          <li class="site-nav__item"><a class="site-nav__link body--bold-light" href="/projects">Projects</a></li>
-          <li class="site-nav__item"><a class="site-nav__link body--bold-light" href="/#contact">Contact</a></li>
+          <li class="site-nav__item"><a class="site-nav__link body--bold-light" href="/projects">Previous work</a></li>
+          <li class="site-nav__item"><a class="site-nav__link body--bold-light" href="/contact">Contact</a></li>
         </ul>
       </nav>
 
@@ -38,13 +38,15 @@
 <style scoped lang="scss">
 .topbit__container {
   width: 100%;
+  max-width: 1100px;
   background-color: white;
+  margin: 0 auto;
 }
 
 .topbit {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   max-width: 1100px;
   margin: 0 auto;
@@ -85,12 +87,12 @@
 }
 
 .logo {
-  width: 150px;
+  width: 175px;
   border-radius: 3px;
   background-color: var(--white);
 
   @media (min-width: 50em) {
-    width: 175px;
+    width: 250px;
   }
 }
 
