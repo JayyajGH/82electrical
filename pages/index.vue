@@ -124,10 +124,11 @@ export default Vue.extend({
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 
     @media (min-width: 50em) {
       flex-direction: row;
+      align-items: flex-start;
     }
   }
 

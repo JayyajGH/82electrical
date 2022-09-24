@@ -1,7 +1,7 @@
 body {
   font-family: 'PT Sans', sans-serif;
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.4rem;
   color: var(--grey-base);
 }
 
@@ -12,7 +12,7 @@ body {
 
 @media (min-width: 50em) {
   .heading1 {
-    font-size: 3.1rem;
+    font-size: 2rem;
   }
 }
 
