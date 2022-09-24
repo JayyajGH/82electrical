@@ -1,7 +1,7 @@
 <template>
   <main class="wrapper">
-    <section class="sectionpart">
-      <h2 class="heading">About us</h2>
+    <section class="u-margin-bottom--large">
+      <h2 class="section__heading heading1">About us</h2>
       <div class="text-stuff">
         <p>Offering domestic electrical services for Bristol and surrounding areas. From it's beginnings
 in 2017 we have focused on delivering high quality, long lasting electrical installations both
@@ -19,22 +19,22 @@ answer them if we can.</p>
         <p>Many thanks for stopping by and we look forward to hearing from you soon.</p>
       </div>
     </section>
-    <section class="sectionpart">
-      <h2 class="heading">What we do</h2>
-      <ul class="items">
-        <li class="item">
-          <img src="~/assets/images/bulb.svg" class="item__image"/>
-          <h2 class="sub-heading">Rewires</h2>
+    <section class="u-margin-bottom--large">
+      <h2 class="section__heading heading1">What we do</h2>
+      <ul class="whatwedo__list">
+        <li class="whatwedo__item">
+          <img src="~/assets/images/bulb.svg" class="whatwedo__image"/>
+          <h2 class="heading3">Rewires</h2>
           <p>Whether an installation has reached the end of its life of is no longer fit for purpose a full rewire is sometimes necessary and we can help</p>
         </li>
-        <li class="item">
-          <img src="~/assets/images/bulb.svg" class="item__image"/>
-          <h2 class="sub-heading">Fault finding</h2>
+        <li class="whatwedo__item">
+          <img src="~/assets/images/bulb.svg" class="whatwedo__image"/>
+          <h2 class="heading3">Fault finding</h2>
           <p>Faults are a pain, so call us and we can start by giving advice over the phone, but if needed can often be there the same day to find a solution</p>
         </li>
-        <li class="item">
-           <img src="~/assets/images/bulb.svg" class="item__image"/>
-          <h2 class="sub-heading">Lighting</h2>
+        <li class="whatwedo__item">
+           <img src="~/assets/images/bulb.svg" class="whatwedo__image"/>
+          <h2 class="heading3">Lighting</h2>
           <p>Superb lighting installations, indoors and out</p>
         </li>
       </ul>
@@ -102,25 +102,16 @@ export default Vue.extend({
     text-align: center;
   }
 
-  .heading {
+  .section__heading {
     text-align: center;
-    font-size: 30px;
 
     &:before {
       content: url('~/assets/images/bolt.svg');
       padding-right: 10px;
     }
-
-    @media (min-width: 50em) {
-      font-size: 40px;
-    }
   }
 
-  .sub-heading {
-    font-size: 20px;
-  }
-
-  .items {
+  .whatwedo__list {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -132,20 +123,16 @@ export default Vue.extend({
     }
   }
 
-  .item {
+  .whatwedo__item {
     width: 200px;
     text-align: center;
   }
 
-  .item__image {
+  .whatwedo__image {
     width: 75px;
 
     @media (min-width: 50em) {
       width: 100px;
     }
-  }
-
-  .sectionpart {
-    margin-bottom: 40px;
   }
 </style>

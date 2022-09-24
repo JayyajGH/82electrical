@@ -69,18 +69,6 @@
     }
   }
 
-  .footer__backtotop {
-    display: flex;
-    flex-direction: column;
-    order: -1;
-    font-size: 2em;
-
-    @media (min-width: 50em) {
-      order: 0;
-      font-size: 3em;
-    }
-  }
-
   .backtotop__text {
     display: block;
     position: relative;

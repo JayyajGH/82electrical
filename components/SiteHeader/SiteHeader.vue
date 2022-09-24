@@ -108,10 +108,14 @@
 }
 
 .site-nav__link {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   transition: 0.3s;
   text-decoration: none;
   color: var(--grey-base);
+
+  @media (min-width: 50em) {
+    font-size: 1.5rem;
+  }
 
   &:hover {
     color: var(--black);
