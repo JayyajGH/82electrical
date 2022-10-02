@@ -1,48 +1,86 @@
- <<template>
+ <template>
     <div class="wrapper">
         <h2 class="heading1">Previous work</h2>
-        <section class="image-text__panel image-text__panel--dark u-margin-bottom--large" id="about">
-                <div class="image-text__image image--brendan"></div>
-                <div class="image-text__text u-padding--small">
-                    <h2 class="heading2 heading--light">About</h2>
-                    <p class="u-margin-bottom--medium">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
-                    </p>
-                </div>
-            </section>
+		<div class="work__container">
+			<button v-for="(workItem, workIndex) in previousWork"
+				:key="workIndex"
+				class="work__item"
+				@click="index = workIndex">
 
-            <section class="image-text__panel image-text__panel--dark u-margin-bottom--large" id="about">
-                <div class="image-text__text u-padding--small">
-                    <h2 class="heading2 heading--light">About</h2>
-                    <p class="u-margin-bottom--medium">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
-                    </p>
-                </div>
-                <div class="image-text__image image--brendan"></div>
-            </section>
+				<!-- Todo: Add real alt text -->
+				<img :src="workItem.url" class="gallery__image" alt="" />
+				<!--
+				<picture>
+					<img :src="workItem.url" class="gallery__image" />
+				</picture>
+				-->
+				<span class="work-item__description">{{workItem.description}}</span>
 
-            <section class="image-text__panel image-text__panel--dark u-margin-bottom--large" id="about">
-                <div class="image-text__image image--brendan"></div>
-                <div class="image-text__text u-padding--small">
-                    <h2 class="heading2 heading--light">About</h2>
-                     <p class="u-margin-bottom--medium">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
-                    </p>
-                </div>
-            </section>
-
-            <section class="image-text__panel image-text__panel--dark u-margin-bottom--large" id="about">
-                <div class="image-text__text u-padding--small">
-                    <h2 class="heading2 heading--light">About</h2>
-                     <p class="u-margin-bottom--medium">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
-                    </p>
-                </div>
-                 <div class="image-text__image image--brendan"></div>
-            </section>
-        </div>
+			</button>
+			
+			<LightGallery
+				:images="previousWork"
+				:index="index"
+				:disable-scroll="false"
+				@close="index = null"/>
+		</div>
+    </div>
  </template>
 
+<script>
+	export default {
+	  data: () => ({
+		previousWork: [
+		  { title: "Fault find",
+		    url: require("~/assets/images/faultfind_1.jpg"),
+			description: 'This fault was found after the customer called to say his RCD had been tripping at certain times of day. After opening up the consumer unit it was clear that the cable supplying his hot water cylinder and not been secured in the circuit breaker correctly when it was installed causing it to overheat and melt into nearby circuits.'
+		  },
+		  { title: "Fuse box",
+		    url: require("~/assets/images/image1.jpg"),
+			description: 'Modern fuse boxes contain lots of safety features that not only improve the safety in your home limiting the chance of an electrical fire or shocks but can also help protect expensive electrical equipment from both minor and major electrical surges. Look out for metal enclosures, RCBOs, SPDs (all now fitted as standard) and more recently Arc fault detection on any quote that you get.'
+		  },
+		  { title: "New kitchen",
+		    url: require("~/assets/images/newkitchen_1.jpg"),
+			description: 'If you are spending all that money on a new kitchen don\'t forget to get an electrician to though roughly check the electrical system, those cables often can\'t be replaced without damaging the brand new tiles or freshly painted walls.'
+		  },
+		  { title: "Fault find",
+		    url: require("~/assets/images/faultfind_1.jpg"),
+			description: 'This fault was found after the customer called to say his RCD had been tripping at certain times of day. After opening up the consumer unit it was clear that the cable supplying his hot water cylinder and not been secured in the circuit breaker correctly when it was installed causing it to overheat and melt into nearby circuits.'
+		  },
+		  { title: "Fuse box",
+		    url: require("~/assets/images/image1.jpg"),
+			description: 'Modern fuse boxes contain lots of safety features that not only improve the safety in your home limiting the chance of an electrical fire or shocks but can also help protect expensive electrical equipment from both minor and major electrical surges. Look out for metal enclosures, RCBOs, SPDs (all now fitted as standard) and more recently Arc fault detection on any quote that you get.'
+		  },
+		  { title: "New kitchen",
+		    url: require("~/assets/images/newkitchen_1.jpg"),
+			description: 'If you are spending all that money on a new kitchen don\'t forget to get an electrician to though roughly check the electrical system, those cables often can\'t be replaced without damaging the brand new tiles or freshly painted walls.'
+		  },
+		  { title: "Fault find",
+		    url: require("~/assets/images/faultfind_1.jpg"),
+			description: 'This fault was found after the customer called to say his RCD had been tripping at certain times of day. After opening up the consumer unit it was clear that the cable supplying his hot water cylinder and not been secured in the circuit breaker correctly when it was installed causing it to overheat and melt into nearby circuits.'
+		  },
+		  { title: "Fuse box",
+		    url: require("~/assets/images/image1.jpg"),
+			description: 'Modern fuse boxes contain lots of safety features that not only improve the safety in your home limiting the chance of an electrical fire or shocks but can also help protect expensive electrical equipment from both minor and major electrical surges. Look out for metal enclosures, RCBOs, SPDs (all now fitted as standard) and more recently Arc fault detection on any quote that you get.'
+		  },
+		  { title: "New kitchen",
+		    url: require("~/assets/images/newkitchen_1.jpg"),
+			description: 'If you are spending all that money on a new kitchen don\'t forget to get an electrician to though roughly check the electrical system, those cables often can\'t be replaced without damaging the brand new tiles or freshly painted walls.'
+		  }
+		],
+		index: null,
+	  }),
+	  components: {},
+	  // Todo: Where should this live?
+	  mounted () {
+		if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+			//document.html.classList.toggle('dark-mode')
+			document.getElementsByTagName('html')[0].classList.add('dark-mode')
+		}
+      }
+	};
+	</script>
+	
  <style scoped lang="scss">
 
 	.wrapper--small {
@@ -53,7 +91,7 @@
 
 	@media (min-width: 50em) {
 	  .wrapper--small {
-			max-width: 600px;
+		max-width: 600px;
 	    padding-left: 0;
 	    padding-right: 0;
 	  }
@@ -83,69 +121,39 @@
 		display: block;
 	}
 
-	.image-text__panel {
-	  display: flex;
-	  flex-wrap: wrap;
-	  justify-content: space-between;
-	}
+	.work__container {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+		margin-bottom: 20px;
+		justify-content: center;
 
-	.image-text__panel--dark {
-	  background-color: lightgray;
-	  color: var(--black);
-	}
-
-	.image-text__text {
-	  width: 100%;
-	}
-
-	@media (min-width: 50em) {
-	  .image-text__text {
-	    width: 50%;
-	  }
-	}
-
-	.image-text__image {
-		width: 100%;
-	}
-
-	@media (min-width: 50em) {
-		.image-text__image {
-			width: 50%;
+		@media (min-width: 50em) {
+			justify-content: normal;
 		}
 	}
 
-	.image--brendan {
-	  background-image: url('~assets/images/image1.jpg');
-	  background-repeat: no-repeat;
-	  background-size: cover;
-	  height: 400px;
+	.work__item {
+		display: flex;
+		flex-direction: column;
+		width: 375px;
+		padding: 10px;
+		border: none;
+		background-color: var(--bg-secondary);
+		color: var(--color-primary);
+
+		&:hover {
+			background-color: var(--bg-tertiary);
+		}
 	}
 
-	.image--tasting {
-	  display: none;
+	.work-item__description {
+		padding: 10px;
+		line-height: 1.3;
 	}
 
-	@media (min-width: 50em) {
-	  .image--tasting {
-	    background-image: url('~assets/images/image1.jpg');
-	    background-repeat: no-repeat;
-	    background-size: cover;
-	    height: 400px;
-	    display: block;
-	  }
-	}
-
-	.image--taps {
-	  display: none;
-	}
-
-	@media (min-width: 50em) {
-	  .image--taps {
-	    background-image: url('~assets/images/image1.jpg');
-	    background-repeat: no-repeat;
-	    background-size: cover;
-	    height: 400px;
-	    display: block;
-	  }
+	.gallery__image {
+		width: 100%;
+		height: 300px;
 	}
  </style>
