@@ -2,8 +2,8 @@
   <header class="u-margin-bottom--medium" id="header">
       <a href="#main" class="u-hidden-visually skip__link">Skip to main content</a>
 
-      <div class="hero__container">
-        <div class="hero">
+      <div class="logo__wrapper">
+        <div class="logo__container">
           <a href="/" title="82Electrical" class="logo__anchor">
               <span class="logo u-padding--small" alt="82Electrical"></span>
             </a>
@@ -18,18 +18,18 @@
         </ul>
       </nav>
 
-      <div class="main-image"/>
+      <div class="hero__image"/>
     </header>
 </template>
 
 <style scoped lang="scss">
-.hero__container {
+.logo__wrapper {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
 }
 
-.hero {
+.logo__container {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -40,7 +40,7 @@
   padding: 5px;
 }
 
-.main-image {
+.hero__image {
   background-image: url('~assets/images/masthead.jpg');
   background-size: cover;
   background-repeat: no-repeat;
