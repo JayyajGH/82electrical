@@ -94,6 +94,13 @@ export default Vue.extend({
             }
         }
     },
+    // Todo: Where should this live?
+    mounted () {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            //document.html.classList.toggle('dark-mode')
+            document.getElementsByTagName('html')[0].classList.add('dark-mode')
+        }
+    }
 })
 </script>
 
@@ -133,6 +140,10 @@ export default Vue.extend({
 
     @media (min-width: 50em) {
       width: 100px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(142deg) brightness(106%) contrast(105%);
     }
   }
 </style>

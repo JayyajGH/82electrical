@@ -2,13 +2,11 @@
   <header class="u-margin-bottom--medium" id="header">
       <a href="#main" class="u-hidden-visually skip__link">Skip to main content</a>
 
-      <div class="topbit__container">
-        <div class="topbit">
-          <!--<a class="header__text header__email" href="mailto:andrew@82electrical.co.uk">andrew@82electrical.co.uk</a>-->
-          <a href="/" class="logo__anchor" title="82Electrical">
+      <div class="hero__container">
+        <div class="hero">
+          <a href="/" title="82Electrical">
               <img src="~/assets/images/logo-horizontal.jpg" class="logo u-padding--small" alt="82Electrical"/>
             </a>
-          <!--<a class="header__text header__phone" href="tel:+447813408135" aria-label="Phone us on 0 7 8 1 3. 4 0 8. 1 3 5">07813 408135</a>-->
         </div>
       </div>
 
@@ -21,29 +19,17 @@
       </nav>
 
       <div class="main-image"/>
-
-      
-      <!--
-      <div class="hero u-margin-bottom--large">
-        <h1 class="main-heading">82ELECTRICAL</h1>
-        <h2>
-          <span>https://www.johnstoneelectricalservicessomerset.co.uk/</span>
-          <span>Get svg logo</span>
-        </h2>
-      </div>
-      -->
     </header>
 </template>
 
 <style scoped lang="scss">
-.topbit__container {
+.hero__container {
   width: 100%;
   max-width: 1100px;
-  background-color: white;
   margin: 0 auto;
 }
 
-.topbit {
+.hero {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -53,18 +39,8 @@
   gap: 150px;
 }
 
-.header__text {
-  color: black;
-  font-size: 20px;
-  display: none;
-
-  @media (min-width: 50em) {
-    display: block;
-  }
-}
-
 .main-image {
-  background-image: url('~assets/images/masthead-large.jpg');
+  background-image: url('~assets/images/masthead.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -72,6 +48,11 @@
 
   @media (min-width: 50em) {
     min-height: 400px;
+    background-image: url('~assets/images/masthead-large.jpg');
+  }
+
+  @media (prefers-color-scheme: dark) {
+    filter: brightness(.8) contrast(1.2);
   }
 }
 
@@ -79,11 +60,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 1rem 0.5rem 1rem;
-  background-color: lightgray;
-}
-
-.logo__anchor {
- // position: absolute;
+  background-color: var(--bg-secondary);
 }
 
 .logo {
@@ -111,7 +88,7 @@
   font-size: 1.3rem;
   transition: 0.3s;
   text-decoration: none;
-  color: var(--grey-base);
+  color: var(--color);
 
   @media (min-width: 50em) {
     font-size: 1.5rem;
@@ -119,15 +96,7 @@
 
   &:hover {
     color: var(--black);
-    //border-top: 2px solid var(--black);
-    //padding-top: 2px; 
   }
-
-/*
-  &:hover:before {
-    content: "+";
-  }
-  */
 }
 
 .skip__link:focus {
@@ -142,18 +111,5 @@
   color: var(--white);
   font-size: 5rem;
   margin-left: -6px;
-}
-
-.hero {
-  background-image: url('~assets/images/masthead.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 250px;
-
-  @media (min-width: 93.75em) {
-    background-image: url('~assets/images/masthead-large.jpg');
-    min-height: 450px;
-    background-position-y: 10%;
-  }
 }
 </style>

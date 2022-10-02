@@ -9,5 +9,9 @@
 <script>
 </script>
 
-<style scoped>
+<style>
+ html {
+  background-color: var(--bg);
+  color: var(--color);
+ }
 </style>

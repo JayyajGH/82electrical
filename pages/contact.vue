@@ -17,6 +17,18 @@
     </div>
 </template>
 
+<script>
+export default {
+    // Todo: Where should this live?
+    mounted () {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            //document.html.classList.toggle('dark-mode')
+            document.getElementsByTagName('html')[0].classList.add('dark-mode')
+        }
+    }
+}
+</script>
+
 <style scoped lang='scss'>
 
     .coverage__map {
@@ -32,6 +44,10 @@
             width: 600px;
             height: 450px;
         }
+
+        @media (prefers-color-scheme: dark) {
+            filter: brightness(.8) contrast(1.2);
+        } 
     }
 
     .contact__container {
@@ -43,7 +59,7 @@
     }
 
     .contact-item__anchor {
-        color: var(--grey-dark);
+        color: var(--color-primary);
         display: flex;
         align-items: center;
     }
@@ -59,6 +75,10 @@
         height: 25px;
         display: inline-flex;
         margin-right: 15px;
+
+        @media (prefers-color-scheme: dark) {
+            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(142deg) brightness(106%) contrast(105%);
+        }
     }
 
     .contact-phone:before {
@@ -68,6 +88,10 @@
         height: 25px;
         display: inline-flex;
         margin-right: 15px;
+
+        @media (prefers-color-scheme: dark) {
+            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(142deg) brightness(106%) contrast(105%);
+        }
     }
 
     .contact-address:before {
@@ -79,6 +103,10 @@
         height: 25px;
         display: inline-flex;
         margin-right: 15px;
+
+        @media (prefers-color-scheme: dark) {
+            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(142deg) brightness(106%) contrast(105%);
+        }
     }
 
 </style>

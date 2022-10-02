@@ -2,7 +2,7 @@
   <footer class="footer__container" id='contact'>
     <div class="footer wrapper">
       <div class="footer__contact u-margin-bottom--medium">
-        <h2 class="heading2 heading--dark">Contact Us</h2>
+        <h2 class="heading2 footer__heading">Contact Us</h2>
         <address>
           <ul>
             <li class="u-margin-bottom--small"><a class="contact-item__anchor" href="mailto:andrew@82electrical.co.uk">andrew@82electrical.co.uk</a></li>
@@ -13,7 +13,7 @@
         </address>
       </div>
       <div class="footer__social u-margin-bottom--medium">
-        <h2 class="heading2 heading--dark">Social</h2>
+        <h2 class="heading2 footer__heading">Social</h2>
         <address>
           <ul>
             <li class="social__item"><a href="https://www.facebook.com/ElectricianforBristol" target="_blank" rel="noopener noreferrer" class="social__logo facebook__logo" title="82Electrical onFacebook"></a></li>
@@ -37,19 +37,23 @@
 
 <style scoped lang="scss">
   .footer__container {
-    background-color: var(--grey-light);
+    background-color: var(--bg-secondary);
   }
 
   .footer {
     display: flex;
     flex-wrap: wrap;
     padding: 2rem 1rem 2rem 1rem;
-    background-color: var(--grey-light);
+    background-color: var(--bg-secondary);
     color: var(--black);
 
     @media (min-width: 50em) {
       padding: 1rem;
     }
+  }
+
+  .footer__heading {
+    color: var(--color-primary);
   }
 
   .footer__contact {
@@ -82,7 +86,7 @@
 
   .footer__copyright {
     width: 100%;
-    color: var(--grey-dark);
+    color: var(--color-primary);
     text-align: center;
   }
 
@@ -105,7 +109,7 @@
   }
 
   .contact-item__anchor {
-    color: var(--grey-dark);
+    color: var(--color-primary);
   }
 
   .contact-item__anchor:hover {
