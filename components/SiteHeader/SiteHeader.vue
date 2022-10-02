@@ -44,7 +44,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 300px;
+  min-height: 250px;
 
   @media (min-width: 50em) {
     min-height: 400px;
