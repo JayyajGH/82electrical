@@ -69,15 +69,7 @@
 		  }
 		],
 		index: null,
-	  }),
-	  components: {},
-	  // Todo: Where should this live?
-	  mounted () {
-		if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-			//document.html.classList.toggle('dark-mode')
-			document.getElementsByTagName('html')[0].classList.add('dark-mode')
-		}
-      }
+	  })
 	};
 	</script>
 	
