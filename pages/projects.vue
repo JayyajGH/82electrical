@@ -74,7 +74,6 @@
 	</script>
 	
  <style scoped lang="scss">
-
 	.wrapper--small {
 	  padding-left: 10px;
 	  padding-right: 10px;
@@ -128,7 +127,7 @@
 	.work__item {
 		display: flex;
 		flex-direction: column;
-		width: 375px;
+		width: 100%;
 		padding: 10px;
 		border: none;
 		background-color: var(--bg-secondary);
@@ -136,6 +135,10 @@
 
 		&:hover {
 			background-color: var(--bg-tertiary);
+		}
+
+		@media (min-width: 35em) {
+			width: 375px;
 		}
 	}
 
