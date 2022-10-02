@@ -4,8 +4,8 @@
 
       <div class="hero__container">
         <div class="hero">
-          <a href="/" title="82Electrical">
-              <img src="~/assets/images/logo-horizontal.jpg" class="logo u-padding--small" alt="82Electrical"/>
+          <a href="/" title="82Electrical" class="logo__anchor">
+              <span class="logo u-padding--small" alt="82Electrical"></span>
             </a>
         </div>
       </div>
@@ -37,6 +37,7 @@
   max-width: 1100px;
   margin: 0 auto;
   gap: 150px;
+  padding: 5px;
 }
 
 .main-image {
@@ -63,13 +64,27 @@
   background-color: var(--bg-secondary);
 }
 
-.logo {
-  width: 175px;
-  border-radius: 3px;
-  background-color: var(--white);
+.logo__anchor {
+  // To get rid of the line-height spacing
+  display: inline-flex;
+}
 
-  @media (min-width: 50em) {
-    width: 250px;
+.logo {
+  border-radius: 3px;
+  background-image: url('~/assets/images/logo-horizontal.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  min-width: 175px;
+  min-height: 80px;
+
+  @media (min-width: 50em) {  
+    min-width: 250px;
+    min-height: 115px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background-image: url('~/assets/images/logo-horizontal-dark.jpg');
   }
 }
 
