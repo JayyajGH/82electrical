@@ -17,13 +17,9 @@
         <address>
           <ul>
             <li class="social__item"><a href="https://www.facebook.com/ElectricianforBristol" target="_blank" rel="noopener noreferrer" class="social__logo facebook__logo" title="82Electrical onFacebook"></a></li>
-            <li class="social__item"><a href="https://instagram.com/ElectricianforBristol" target="_blank" rel="noopener noreferrer" class="social__logo instagram__logo" title="82Electrical on Instagram"></a></li>
+           <!-- <li class="social__item"><a href="https://instagram.com/ElectricianforBristol" target="_blank" rel="noopener noreferrer" class="social__logo instagram__logo" title="82Electrical on Instagram"></a></li> -->
           </ul>
         </address>
-      </div>
-
-      <div class="footer__copyright">
-        <p class="smallest-text">Site developed by Jason Harris © 2022</p>
       </div>
     </div>
   </footer>
