@@ -17,6 +17,7 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+      { rel: 'preconnect', href: 'fonts.gstatic.com' },
       { rel: 'dns-prefetch', href: 'https://fonts.googleapis.com' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=PT+Sans'}
     ]
