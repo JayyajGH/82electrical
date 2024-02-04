@@ -11,7 +11,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: '82 Electrical - Domestic electrician serving Bristol and the surrounding areas' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [

@@ -23,17 +23,17 @@ answer them if we can.</p>
       <h2 class="section__heading heading1">What we do</h2>
       <ul class="whatwedo__list">
         <li class="whatwedo__item">
-          <img src="~/assets/images/bulb.svg" class="whatwedo__image"/>
+          <img src="~/assets/images/bulb.svg" class="whatwedo__image" alt=""/>
           <h2 class="heading3">Rewires</h2>
           <p>Whether an installation has reached the end of its life of is no longer fit for purpose a full rewire is sometimes necessary and we can help</p>
         </li>
         <li class="whatwedo__item">
-          <img src="~/assets/images/bulb.svg" class="whatwedo__image"/>
+          <img src="~/assets/images/bulb.svg" class="whatwedo__image" alt=""/>
           <h2 class="heading3">Fault finding</h2>
           <p>Faults are a pain, so call us and we can start by giving advice over the phone, but if needed can often be there the same day to find a solution</p>
         </li>
         <li class="whatwedo__item">
-           <img src="~/assets/images/bulb.svg" class="whatwedo__image"/>
+           <img src="~/assets/images/bulb.svg" class="whatwedo__image" alt=""/>
           <h2 class="heading3">Lighting</h2>
           <p>Superb lighting installations, indoors and out</p>
         </li>
