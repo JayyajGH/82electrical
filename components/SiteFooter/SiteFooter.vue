@@ -16,7 +16,8 @@
         <h2 class="heading2 footer__heading">Social</h2>
         <address>
           <ul>
-            <li class="social__item"><a href="https://www.facebook.com/ElectricianforBristol" target="_blank" rel="noopener noreferrer" class="social__logo facebook__logo" title="82Electrical onFacebook"></a></li>
+            <li class="social__item"><a href="https://www.facebook.com/ElectricianforBristol" target="_blank" rel="noopener noreferrer" class="social__logo facebook__logo" title="82Electrical on Facebook"></a></li>
+            <li class="social__item"><a href="https://g.co/kgs/8yUWFXC" target="_blank" rel="noopener noreferrer" class="social__logo google__logo" title="82Electrical on Google"></a></li>
            <!-- <li class="social__item"><a href="https://instagram.com/ElectricianforBristol" target="_blank" rel="noopener noreferrer" class="social__logo instagram__logo" title="82Electrical on Instagram"></a></li> -->
           </ul>
         </address>
@@ -103,6 +104,13 @@
   .instagram__logo {
     background: url('~assets/images/instagram-logo.svg');
   }
+
+  .google__logo {
+    background: url('~assets/images/google-logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
 
   .contact-item__anchor {
     color: var(--color-primary);
